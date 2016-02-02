@@ -1,0 +1,131 @@
+<launch>
+  <!-- No namespace here as we will share this description. 
+       Access with slash at the beginning -->
+
+
+
+
+  <!-- BEGIN ROBOT 1-->
+  <group ns="sheep1">  
+    <remap from="remote" to="/remote"/>
+    <param name="tf_prefix" value="sheep1_tf" />
+    <include file="$(find iarc_create)/launch/one_robot.launch" >
+      <arg name="init_pose" value="-x 2.0 -y 0.0 -Y 0.0" />
+      <arg name="robot_name"  value="sheep1" />
+    </include>
+
+  </group>
+
+  <!-- BEGIN ROBOT 1-->
+  <group ns="sheep2">  
+    <remap from="remote" to="/remote"/>
+    <param name="tf_prefix" value="sheep2_tf" />
+    <include file="$(find iarc_create)/launch/one_robot.launch" >
+      <arg name="init_pose" value="-x 1.6825071941559213 -y 1.0812814349712885 -Y 0.5711985454545455" />
+      <arg name="robot_name"  value="sheep2" />
+    </include>
+
+  </group>
+
+  <!-- BEGIN ROBOT 1-->
+  <group ns="sheep3">  
+    <remap from="remote" to="/remote"/>
+    <param name="tf_prefix" value="sheep3_tf" />
+    <include file="$(find iarc_create)/launch/one_robot.launch" >
+      <arg name="init_pose" value="-x 0.8308304583864312 -y 1.8192637932464308 -Y 1.142397090909091" />
+      <arg name="robot_name"  value="sheep3" />
+    </include>
+
+  </group>
+
+  <!-- BEGIN ROBOT 1-->
+  <group ns="sheep4">  
+    <remap from="remote" to="/remote"/>
+    <param name="tf_prefix" value="sheep4_tf" />
+    <include file="$(find iarc_create)/launch/one_robot.launch" >
+      <arg name="init_pose" value="-x -0.28462897079688926 -y 1.9796429852332222 -Y 1.7135956363636367" />
+      <arg name="robot_name"  value="sheep4" />
+    </include>
+
+  </group>
+
+  <!-- BEGIN ROBOT 1-->
+  <group ns="sheep5">  
+    <remap from="remote" to="/remote"/>
+    <param name="tf_prefix" value="sheep5_tf" />
+    <include file="$(find iarc_create)/launch/one_robot.launch" >
+      <arg name="init_pose" value="-x -1.3097207494173926 -y 1.5114997712687699 -Y 2.284794181818182" />
+      <arg name="robot_name"  value="sheep5" />
+    </include>
+
+  </group>
+
+  <!-- BEGIN ROBOT 1-->
+  <group ns="sheep6">  
+    <remap from="remote" to="/remote"/>
+    <param name="tf_prefix" value="sheep6_tf" />
+    <include file="$(find iarc_create)/launch/one_robot.launch" >
+      <arg name="init_pose" value="-x -1.9189856124331588 -y 0.5634662538915127 -Y 2.8559927272727275" />
+      <arg name="robot_name"  value="sheep6" />
+    </include>
+
+  </group>
+
+  <!-- BEGIN ROBOT 1-->
+  <group ns="sheep7">  
+    <remap from="remote" to="/remote"/>
+    <param name="tf_prefix" value="sheep7_tf" />
+    <include file="$(find iarc_create)/launch/one_robot.launch" >
+      <arg name="init_pose" value="-x -1.9189863489831036 -y -0.5634637454322134 -Y 3.4271912727272733" />
+      <arg name="robot_name"  value="sheep7" />
+    </include>
+
+  </group>
+
+  <!-- BEGIN ROBOT 1-->
+  <group ns="sheep8">  
+    <remap from="remote" to="/remote"/>
+    <param name="tf_prefix" value="sheep8_tf" />
+    <include file="$(find iarc_create)/launch/one_robot.launch" >
+      <arg name="init_pose" value="-x -1.3097227252179184 -y -1.5114980592272518 -Y 3.9983898181818187" />
+      <arg name="robot_name"  value="sheep8" />
+    </include>
+
+  </group>
+
+  <!-- BEGIN ROBOT 1-->
+  <group ns="sheep9">  
+    <remap from="remote" to="/remote"/>
+    <param name="tf_prefix" value="sheep9_tf" />
+    <include file="$(find iarc_create)/launch/one_robot.launch" >
+      <arg name="init_pose" value="-x -0.2846315585455434 -y -1.9796426131703508 -Y 4.569588363636364" />
+      <arg name="robot_name"  value="sheep9" />
+    </include>
+
+  </group>
+
+  <!-- BEGIN ROBOT 1-->
+  <group ns="sheep10">  
+    <remap from="remote" to="/remote"/>
+    <param name="tf_prefix" value="sheep10_tf" />
+    <include file="$(find iarc_create)/launch/one_robot.launch" >
+      <arg name="init_pose" value="-x 0.8308280802812295 -y -1.8192648792894912 -Y 5.1407869090909095" />
+      <arg name="robot_name"  value="sheep10" />
+    </include>
+
+  </group>
+
+  <!-- BEGIN ROBOT 1-->
+  <group ns="sheep11">  
+    <remap from="remote" to="/remote"/>
+    <param name="tf_prefix" value="sheep11_tf" />
+    <include file="$(find iarc_create)/launch/one_robot.launch" >
+      <arg name="init_pose" value="-x 1.6825057807254653 -y -1.0812836343094223 -Y 5.711985454545455" />
+      <arg name="robot_name"  value="sheep11" />
+    </include>
+
+  </group>
+
+
+
+</launch>

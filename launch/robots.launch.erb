@@ -1,0 +1,21 @@
+<launch>
+  <!-- No namespace here as we will share this description. 
+       Access with slash at the beginning -->
+
+<% radius = 2 %>
+<% max_i = 10 %>
+<% (0..max_i).each do |i| %>
+  <!-- BEGIN ROBOT 1-->
+  <group ns="<%= "sheep#{i+1}" %>">  
+    <remap from="remote" to="/remote"/>
+    <param name="tf_prefix" value="<%= "sheep#{i+1}" %>_tf" />
+    <include file="$(find iarc_create)/launch/one_robot.launch" >
+      <arg name="init_pose" value="-x <%= "#{radius *Math.cos(i*(2*3.141592)/(max_i+1))}" %> -y <%= "#{radius *Math.sin(i*(2*3.141592)/(max_i+1))}" %> -Y <%= "#{i*(2*3.141592)/(max_i+1)}" %>" />
+      <arg name="robot_name"  value="<%= "sheep#{i+1}" %>" />
+    </include>
+
+  </group>
+<% end %>
+
+
+</launch>

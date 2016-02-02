@@ -1,0 +1,12 @@
+<launch>
+    <arg name="robot_name"/>
+    <arg name="init_pose"/>
+
+    <node name="spawn_minibot_model" pkg="gazebo_ros" type="spawn_model"
+     args="$(arg init_pose) -file /home/borowczyka/src/sitl_gazebo/models/create_crai/model.sdf -sdf -model $(arg robot_name)"
+     respawn="false" output="screen" />
+
+    <node pkg="iarc_create" type="sheep" 
+          name="robot_behavior" output="screen"/>
+
+</launch>
